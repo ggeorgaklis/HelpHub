@@ -263,7 +263,6 @@ int needWillHelp = TASK_NEED_HELP;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     SimpleTaskCell *cell = (SimpleTaskCell *)[tableView cellForRowAtIndexPath:indexPath];
     _currentTaskID = cell.taskID;
-    
     [self performSegueWithIdentifier:@"TaskSegue" sender:self];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

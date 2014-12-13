@@ -433,7 +433,7 @@ enum TextFieldTag : NSInteger {
 #pragma show/hide pickers
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    [tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
     //doing this to connect needWillHelpString since it doesn't work initially
     _needWillHelpString = _needWillHelpCell.needWillHelpString;
     if(indexPath.row == 1) {
